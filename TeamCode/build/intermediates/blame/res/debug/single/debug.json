@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/garrison/Workspace/Delta-2022/TeamCode/build/intermediates/res/merged/debug/xml_teamwebcamcalibrations.xml.flat",
+        "source": "/home/garrison/Workspace/Delta-2022/TeamCode/src/main/res/xml/teamwebcamcalibrations.xml"
+    },
+    {
+        "merged": "/home/garrison/Workspace/Delta-2022/TeamCode/build/intermediates/res/merged/debug/raw_readme.md.flat",
+        "source": "/home/garrison/Workspace/Delta-2022/TeamCode/src/main/res/raw/readme.md"
+    }
+]
