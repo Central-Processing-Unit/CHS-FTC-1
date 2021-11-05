@@ -11,6 +11,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
 import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
+import org.firstinspires.ftc.robotcore.external.tfod.Recognition;
+
+import java.util.List;
 
 @com.qualcomm.robotcore.eventloop.opmode.Autonomous(name="Working Auton", group="Auton Finalization")
 public class Auton extends LinearOpMode
@@ -30,6 +33,7 @@ public class Auton extends LinearOpMode
     double kP = 0.01;
     int target = 0;
     ElapsedTime runtime = new ElapsedTime();
+    AutonLogic logicHelper;
 
     // Static variables for tuning with ftcdashboard
 
@@ -57,6 +61,13 @@ public class Auton extends LinearOpMode
             telemetry.addData("4 rightFrontPower", rightFrontPower);
             telemetry.addData("5 step", instruction);
             telemetry.update();
+
+            logicHelper = new AutonLogic();
+            logicHelper.initVuforia();
+
+
+
+
 
             move(-1293, -1293, 1);
 //          end(2);
